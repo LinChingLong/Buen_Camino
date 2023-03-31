@@ -1,0 +1,1183 @@
+@import url("reset.css");
+
+
+body{
+    color: black;
+    font-family: 'Times New Roman','Arail','Noto Sans TC', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    display: block;
+}
+
+P{
+    line-height: 1.4;
+}
+
+header{
+    background-image: url(../img/routes_mainbn.jpg);
+    background-repeat: no-repeat;
+    background-position:center center;
+    background-size:cover;
+    height: 850px;
+}
+
+
+/* header start */
+.wrapper{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 575.98px) {
+    
+    .wrapper{
+        width: auto;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px){
+    
+    .wrapper{
+        width: auto;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px){
+    
+    .wrapper{
+        width: auto;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px){
+    .wrapper{
+        width: auto;
+    }
+}
+
+/* header title*/
+.main-nav li:nth-child(3) a{
+    color: #FFDC59;
+}
+
+.nav-logo-ph{
+    display: none;
+}
+
+/* header right nav */
+.right-nav{
+    display: none;
+}
+
+
+.main_title{
+    padding-top: 200px;
+    margin: 0 auto;
+    width: 30%;
+    border-bottom: #FFDC59 10px solid;  
+}
+
+.main_title h1{
+    color: white;
+    font-size: 64px;
+    text-align: center;
+    letter-spacing: 15px;
+    margin-bottom: 10px;
+}
+
+h2{
+    color: white;
+    font-size: 36px;
+    text-align: center;
+    margin-top: 40px;
+    letter-spacing: 8px;
+}
+/* header 最外層  end*/
+
+/* ------header RWD------ */
+@media screen and (max-width: 575.98px) {
+    header{
+        width: auto;
+        height: 450px;
+    }
+
+    .main_title h1{
+        font-size: 36px;
+        
+
+    }
+
+    .main_title{
+        padding-top: 20px;
+        width: 54%;
+    }
+
+    h2{
+        font-size: 24px;
+        letter-spacing: 5px;
+        /* border: 1px solid red; */
+        padding: 0 20px;
+        line-height: 1.5;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px){
+    header{
+        width: auto;
+        height: 450px;
+    }
+
+    .main_title h1{
+        font-size: 48px;
+    }
+
+    .main_title{
+        padding-top: 20px;
+        width: 40%;
+    }
+
+    h2{
+        font-size: 24px;
+        letter-spacing: 5px;
+        /* border: 1px solid red; */
+        padding: 0 20px;
+        line-height: 1.5;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 991.98px){
+    .right-nav{
+        display: block;
+    }
+
+    .main_title{
+        width: 40%;
+    }
+
+    h2{
+        margin: 40px 100px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px){
+    header{
+        width: auto;
+    }
+
+    .main_title h1{
+        font-size: 48px;
+    }
+
+    .main_title{
+        padding-top: 20px;
+        width: 40%;
+    }
+
+    h2{
+        font-size: 24px;
+        letter-spacing: 5px;
+        /* border: 1px solid red; */
+        padding: 0 20px;
+        line-height: 1.5;
+    }
+
+}
+
+
+/* container 最外層 */
+.container{
+    background-image: url(../img/backgroundbn.png) ;
+    background-repeat: left top repeat ;
+    overflow: hidden;
+}
+
+/* .container img{
+    width: 100%;
+} */
+
+.section_wrapper{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* breadcrumbs 麵包屑 */
+.breadcrumb{
+    display: flex;
+    padding-top: 32px;
+    margin-bottom: 20px;
+}
+.breadcrumb a{
+    color: #213375;
+    line-height: 30px;
+}
+
+.breadcrumb li{
+    margin: 0px 15px;
+}
+
+.breadcrumb_list{
+    background-color: #FFDC59;
+    width: 50px;
+    height: 30px;
+    /* border-radius: 10px; */
+}
+
+.breadcrumb a:hover{
+    color: #FFDC59 ;
+}
+
+/* .breadcrumb_list + li::before{
+    content: '>';
+    display: inline-block;
+    padding: 10px;
+    color: #213375;
+  } */
+
+  .breadcrumb .fa-solid{
+    margin-top: 8px;
+    color: #213375;
+} 
+
+.breadcrumb_list:hover{
+    background-color: #213375;
+}
+
+.current{
+    background-color: #C0E3EE;
+    width: 50px;
+    height: 25px;
+    color: #213375;
+    padding-top: 6px;
+    padding-left: 6px ;
+}
+/* breadcrumbs 麵包屑 end */
+
+
+/* ------section----------  */
+/* ----------routes map---------  */
+.map_bg{
+    background-color: #213375;
+    width: 1200px;
+    height: 820px;
+}
+
+.map_bn{
+    width: 760px;
+    height: 770px;
+    float: right;
+    padding: 110px 120px 50px 0;
+    position: relative;
+}
+
+.map_bn img{
+    width: 100%;
+}
+
+.map_left_nav{
+    width: 320px;
+    padding-top: 301px;
+}
+
+.third_title{
+    color: white;
+    font-size: 36px;
+    padding: 0 0 20px 150px;    
+}
+
+.third_title_ph{
+    display: none;
+}
+
+.routes_buttons{
+    width: 200px;
+    height: 302px;
+    background-color: #FFDC59;
+    margin-left: 120px;
+    position: absolute;
+}
+
+.routes_buttons_ph{
+    display: none;
+}
+
+.routes_buttons a{
+    display: block;
+    color: #213375;
+    font-size: 18px;
+    margin-bottom: 8px;
+    padding-top: 10px;
+    text-align: justify;
+}
+
+/* .routes_button .color_ch:nth-child(1){
+
+} */
+                 
+.fa-circle{
+    padding: 0 12px;
+}
+
+.c01{
+    color: #7ecef4;
+}
+.c02{
+    color: #3e6cac;
+}
+.c03{
+    color: #84ccc9;
+}
+.c04{
+    color: #f29c9f;
+}
+.c05{
+    color: #8c97cb;
+}
+.c06{
+    color: #f18d1a;
+}
+.c07{
+    color: #00a3b0;
+}
+
+.routes_buttons a:hover{
+    color: #213375;
+}
+
+/* .routes_color_list{
+    width: 25px;
+    height: 321px;
+    background-color: #FFDC59;
+    position: absolute;
+    left: 100px;
+} */
+
+/* .routes_color{
+    width: 18px;
+    padding-top: 13px;
+    padding-left: 16px;
+    margin-bottom: 7px;
+} */
+
+/* change-maps */
+
+.maps_bn{
+    display: none;
+}
+
+.maps_show{
+    display: block;
+}
+
+.color_ch{
+    color: white ;
+}
+/* ----------routes map end---------  */
+
+/* section routes map RWD */
+@media screen and (max-width: 575.98px) {
+    
+    .section_wrapper{
+        width: auto;
+    }
+
+    .map_bg{
+        width: auto;
+        height: auto;
+        padding: 20px 0;
+        background-color: #C0E3EE;
+    }
+
+    .map_bn{
+        max-width: 90%;
+        height: 100%;
+        padding: 0px;
+        float: none;
+        margin: 0 auto;
+    }
+    
+    .third_title_ph h3{
+        font-size: 28px;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .third_title{
+        display: none;
+    }
+
+    .routes_buttons{
+        display: none;
+    }
+
+    .routes_buttons_ph{
+        /* display: flex;
+        justify-content: space-around; */
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 40px;
+        padding-left: 30px;
+        background-color: #FFDC59;
+    }
+
+    .routes_buttons_ph a{
+        color: #213375;
+        font-size: 16px;
+        width: 50%;
+        text-align: unset ;
+        margin: 5px 0px;
+    }
+
+    .map_left_nav{
+        display: none;
+    }
+    
+    .color_ch{
+        color: white ;
+    }
+
+}
+
+@media (min-width: 576px) and (max-width: 767.98px){
+    
+    .section_wrapper{
+        width: auto;
+    }
+
+    .map_bg{
+        width: auto;
+        height: auto;
+        padding: 20px 0;
+        background-color: #C0E3EE;
+    }
+
+    .map_bn{
+        max-width: 90%;
+        height: 100%;
+        padding: 0px;
+        float: none;
+        margin: 0 auto;
+    }
+    
+    .third_title_ph h3{
+        font-size: 28px;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .third_title{
+        display: none;
+    }
+
+    .routes_buttons{
+        display: none;
+    }
+
+    .routes_buttons_ph{
+        /* display: flex;
+        justify-content: space-around; */
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 40px;
+        padding-left: 30px;
+        background-color: #FFDC59;
+    }
+
+    .routes_buttons_ph a{
+        color: #213375;
+        font-size: 16px;
+        width: 50%;
+        text-align: unset ;
+        margin: 5px 0px;
+    }
+
+    .map_left_nav{
+        display: none;
+    }
+    
+    .color_ch{
+        color: white ;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 991.98px){
+    .section_wrapper{
+        width: auto;
+    }
+
+    .map_bg{
+        width: auto;
+        height: 560px;
+    }
+
+    .map_bn{
+        width: 590px;
+        padding: 86px 30px 0px 0px;
+        height: 400px;
+    }
+
+    .routes_buttons{
+        margin-left: 74px;
+    }
+
+    .map_left_nav {
+        padding-top: 110px;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 869px){
+    .map_bn{
+        width: 500px;
+        height: 35px;
+    }
+
+    .routes_buttons{
+        margin-left: 36px;
+        width: 182px;
+    }
+
+    .third_title{
+        padding: 0 0 20px 60px;
+    }
+
+    .map_left_nav{
+        padding-top: 79px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px){
+    .section_wrapper{
+        width: auto;
+    }
+
+    .map_bg{
+        width: auto;
+        height: 715px;
+    }
+
+    .map_bn{
+        padding: 73px 50px 0px 0px;
+    }
+
+    .routes_buttons{
+        margin-left: 57px;
+    }
+
+    .map_left_nav{
+        padding-top: 264px;
+    }
+
+    .third_title{
+        padding: 0 0 20px 90px ;
+    }
+}
+/* routes list 朝聖之路介紹 */
+
+/* routes area one 第一區 */
+.routes_title{
+    display: flex;
+    width: 1200px;
+}
+
+.routes_title .pic01{
+    width:50px;
+    padding-left: 420px;
+}
+
+h4{
+    font-size: 40px;
+    font-weight: bold;
+    padding-top: 5px;
+}
+
+.routes_container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.routes_cards{
+    position: relative;
+    width: 580px;
+    float: left;
+    margin: 60px 10px 60px 10px;
+
+}
+
+.routes_cards img{
+    display: block;
+    width: 100%;
+
+}
+
+.routes_info{
+    opacity: 0;
+    position: absolute;
+    box-sizing: border-box;
+    background-color: rgba(0,0,0,.3);
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 60px;
+    -webkit-transition:.5s ease-out;
+}
+
+.routes_info h5{
+    color: white;
+    font-size: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 5px;
+    padding-bottom: 80px;
+    text-align: center;
+}
+
+.routes_info p{
+    color: #ffffff;
+    font-size: 22px;
+    letter-spacing: 3px;
+    padding: 0px 40px;
+}
+
+.routes_info:hover{
+    margin-top: 0;
+    opacity: 1;
+}
+/* routes area one 第一區 end */
+
+/* routes area one 第二區 */
+
+.routes_container2{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.routes_cards2{
+    position: relative;
+    width: 380px;
+    float: left;
+    margin: 10px 10px 60px 10px;
+}
+
+.routes_cards2 img{
+    display: block;
+    width: 100%;
+}
+
+.routes_info2{
+    opacity: 0;
+    position: absolute;
+    box-sizing: border-box;
+    background-color: rgba(0,0,0,.3);
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 60px;
+    -webkit-transition:.5s ease-out;
+}
+
+.routes_info2 h5{
+    color: white;
+    font-size: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 5px;
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+.routes_info2 p{
+    color: #ffffff;
+    font-size: 20px;
+    letter-spacing: 3px;
+    padding: 0px 40px;
+}
+
+.routes_info2:hover{
+    margin-top: 0;
+    opacity: 1;
+}
+/* routes area one 第二區 end */
+
+/* routes area one 第三區 */
+.routes_container3{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.routes_cards3{
+    position: relative;
+    width: 580px;
+    float: left;
+    margin: 10px 10px 70px 10px;
+}
+
+.routes_cards3 img{
+    display: block;
+    width: 100%;
+
+}
+
+.routes_info3{
+    opacity: 0;
+    position: absolute;
+    box-sizing: border-box;
+    background-color: rgba(0,0,0,.3);
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 60px;
+    -webkit-transition:.5s ease-out;
+}
+
+.routes_info3 h5{
+    color: white;
+    font-size: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 5px;
+    padding-bottom: 80px;
+    text-align: center;
+}
+
+.routes_info3 p{
+    color: #ffffff;
+    font-size: 22px;
+    letter-spacing: 3px;
+    padding: 0px 50px;
+}
+
+.routes_info3:hover{
+    margin-top: 0;
+    opacity: 1;
+}
+/* routes area one 第三區 end */
+
+/* routes list 朝聖之路介紹 end */
+
+/* -------section end--------  */
+
+/* section routes map RWD */
+@media screen and (max-width: 575.98px) {
+
+    .routes_title{
+        width: auto;
+    }
+
+    .routes_title .pic01{
+        padding-left: 0px;
+    }
+    
+    .routes_title .pic01 img{
+        width: 80%;
+        padding: 20px 0px 0px 80px;
+    }
+
+    .routes_title_4{
+        width: 100%;
+    }
+
+
+    h4{
+        font-size: 24px;
+        padding-top: 30px;
+        text-align: center;
+    }
+
+    .routes_container{
+        width: auto;
+    }
+
+    .routes_cards{
+        width: 100%;
+        float: unset;
+        margin: 30px auto;
+    }
+
+    .routes_info{
+        opacity: 1;
+        position: unset;
+        background-color: unset;
+        padding-top: 20px;
+    }
+
+    .routes_info h5{
+        color: #213375;
+        font-size: 24px;
+        padding-bottom: 20px;
+    }
+    
+
+    .routes_info h5::after{
+        content: "";
+        display: block;
+        width: 66%;
+        height: 3px;
+        background-color: #FFDC59;
+        margin: 0 auto;
+    }
+
+    .routes_info p{
+        color: black;
+        font-size: 18px;
+    }
+
+    .routes_container2{
+        width: auto;
+    }
+
+    .routes_cards2{
+        width: 100%;
+        float: unset;
+        margin: 30px auto;
+        position: unset;
+    }
+
+    .routes_info2{
+        opacity: 1;
+        position: unset;
+        background-color: unset;
+        padding-top: 20px;
+    }
+
+    .routes_cards2 img{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .routes_info2 h5{
+        color: #213375;
+        font-size: 24px;
+        padding-bottom: 20px;
+    }
+    
+
+    .routes_info2 h5::after{
+        content: "";
+        display: block;
+        width: 66%;
+        height: 3px;
+        background-color: #FFDC59;
+        margin: 0 auto;
+    }
+
+    .routes_info2 p{
+        color: black;
+        font-size: 18px;
+    }
+
+    .routes_container3{
+        width: auto;
+    }
+
+    .routes_cards3{
+        width: 100%;
+        float: unset;
+        margin: 30px auto;
+        position: unset;
+    }
+
+    .routes_info3{
+        opacity: 1;
+        position: unset;
+        background-color: unset;
+        padding-top: 20px;
+    }
+
+
+    .routes_info3 h5{
+        color: #213375;
+        font-size: 24px;
+        padding-bottom: 20px;
+    }
+    
+
+    .routes_info3 h5::after{
+        content: "";
+        display: block;
+        width: 66%;
+        height: 3px;
+        background-color: #FFDC59;
+        margin: 0 auto;
+    }
+
+    .routes_info3 p{
+        color: black;
+        font-size: 18px;
+    }
+}    
+
+
+@media (min-width: 576px) and (max-width: 767.98px){
+
+    .routes_title{
+        width: auto;
+    }
+
+    .routes_title .pic01{
+        padding-left: 0px;
+    }
+    
+    .routes_title .pic01 img{
+        width: 80%;
+        padding: 20px 0px 0px 250px;
+    }
+
+    .routes_title_4{
+        width: 100%;
+    }
+
+
+    h4{
+        font-size: 24px;
+        padding-top: 30px;
+        text-align: center;
+    }
+
+    .routes_container{
+        width: auto;
+    }
+
+    .routes_cards{
+        width: 100%;
+        float: unset;
+        margin: 30px auto;
+    }
+
+    .routes_info{
+        opacity: 1;
+        position: unset;
+        background-color: unset;
+        padding-top: 20px;
+    }
+
+    .routes_info h5{
+        color: #213375;
+        font-size: 24px;
+        padding-bottom: 20px;
+    }
+    
+
+    .routes_info h5::after{
+        content: "";
+        display: block;
+        width: 40%;
+        height: 3px;
+        background-color: #FFDC59;
+        margin: 0 auto;
+    }
+
+    .routes_info p{
+        color: black;
+        font-size: 18px;
+    }
+
+    .routes_container2{
+        width: auto;
+    }
+
+    .routes_cards2{
+        width: 100%;
+        float: unset;
+        margin: 30px auto;
+        position: unset;
+    }
+
+    .routes_info2{
+        opacity: 1;
+        position: unset;
+        background-color: unset;
+        padding-top: 20px;
+    }
+
+    .routes_cards2 img{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .routes_info2 h5{
+        color: #213375;
+        font-size: 24px;
+        padding-bottom: 20px;
+    }
+    
+
+    .routes_info2 h5::after{
+        content: "";
+        display: block;
+        width: 40%;
+        height: 3px;
+        background-color: #FFDC59;
+        margin: 0 auto;
+    }
+
+    .routes_info2 p{
+        color: black;
+        font-size: 18px;
+    }
+
+    .routes_container3{
+        width: auto;
+    }
+
+    .routes_cards3{
+        width: 100%;
+        float: unset;
+        margin: 30px auto;
+        position: unset;
+    }
+
+    .routes_info3{
+        opacity: 1;
+        position: unset;
+        background-color: unset;
+        padding-top: 20px;
+    }
+
+
+    .routes_info3 h5{
+        color: #213375;
+        font-size: 24px;
+        padding-bottom: 20px;
+    }
+    
+
+    .routes_info3 h5::after{
+        content: "";
+        display: block;
+        width: 40%;
+        height: 3px;
+        background-color: #FFDC59;
+        margin: 0 auto;
+    }
+
+    .routes_info3 p{
+        color: black;
+        font-size: 18px;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 991.98px){
+    .routes_title{
+        width: auto;
+        margin-top: 40px;
+    }
+
+    .routes_title .pic01{
+        padding-left: 300px;
+    }
+
+    h4{
+        font-size: 36px;
+    }
+
+    .routes_container{
+        width: auto;
+        margin-left: 30px;
+    }
+
+    .routes_cards{
+        width: 47%;
+        margin: 40px 15px 30px 0px;
+    }
+
+    .routes_container2{
+        width: auto;
+        margin-left: 20px;
+    }
+
+    .routes_cards2{
+        width: 30%;
+        margin: 10px 10px 20px 10px;
+    }
+
+    .routes_container3{
+        width: auto;
+        margin-left: 30px;
+    }
+
+    .routes_cards3{
+        width: 47%;
+        margin: 20px 15px 50px 0px;
+    }
+
+    .routes_info{
+        padding-top: 18px;
+        opacity: 1;
+    }
+
+    .routes_info h5{
+        font-size: 28px;
+        padding-bottom: 20px;
+    }
+
+    .routes_info p{
+        font-size: 16px;
+        padding: 0px 20px;
+    }
+
+    .routes_info2 h5{
+        font-size: 20px;
+        padding-bottom: 12px;
+    }
+
+    .routes_info2{
+        padding-top: 15px;
+        opacity: 1;
+    }
+
+    .routes_info2 p{
+        font-size: 15px;
+        padding: 0px 20px;
+    }
+
+    .routes_info3{
+        padding-top: 18px;
+        opacity: 1;
+    }
+
+    .routes_info3 h5{
+        font-size: 28px;
+        padding-bottom: 20px;
+    }
+
+    .routes_info3 p{
+        font-size: 16px;
+        padding: 0px 20px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px){
+    .routes_container{
+        width: auto;
+        margin-left: 30px;
+    }
+
+    .routes_cards{
+        width: 48%;
+        margin: 40px 15px 30px 0px;
+    }
+
+    .routes_container2{
+        width: auto;
+        margin-left: 20px;
+    }
+
+    .routes_cards2{
+        width: 31%;
+        margin: 10px 10px 20px 10px;
+    }
+
+    .routes_container3{
+        width: auto;
+        margin-left: 30px;
+    }
+
+    .routes_cards3{
+        width: 47%;
+        margin: 20px 15px 50px 0px;
+    }
+}

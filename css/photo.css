@@ -1,0 +1,596 @@
+@import url("reset.css");
+
+
+body{
+    color: black;
+    font-family: 'Times New Roman','Arail','Noto Sans TC', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    display: block;
+}
+
+P{
+    line-height: 1.4;
+}
+
+header{
+    /* background-image: 
+    linear-gradient(to bottom, rgba(156, 156, 156, 0.6) 0%, 
+    rgba(255, 255, 255, 0) 30%),url(../img/photo_mian_bn.jpg); */
+    background-repeat: no-repeat;
+    background-position:center center;
+    background-size:cover;
+    height: 750px;
+    position: relative;
+}
+
+
+
+.slider{
+    position: absolute;
+    top: 90%;
+    left: 40%;
+    cursor: pointer;
+}
+
+.dots{
+    bottom: 0;
+}
+
+
+.dot{
+    background-color: white;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 8px;
+}
+
+.dotonclick{
+    background-color: #213375;
+}
+
+
+/* BCImageSlider */
+
+
+
+/* header 最外層 */
+.wrapper{
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* header nav */
+
+.main-nav li:nth-child(5) a{
+    color: #FFDC59;
+}
+
+.nav-logo-ph{
+    display: none;
+}
+
+
+/* header title  */
+.main_title h1{
+    color: #FFDC59;
+    font-size: 64px;
+    letter-spacing: 12px;
+    margin: 180px 0px 20px 0px;
+    line-height: 1.2;
+}
+
+.main_title h2{
+    color: #FFDC59;
+    font-size: 48px;
+    letter-spacing: 3px;
+}
+
+.main_title{
+    padding-left: 80px;
+}
+
+/* header 最外層  end*/
+
+
+@media screen and (max-width: 575.98px) {
+    .wrapper{
+        width: auto;
+    }
+
+    .right-nav{
+        display: none;
+    }
+
+    header{
+        height: 450px;
+    }
+
+    .main_title h1{
+        font-size: 32px;
+        margin: 30px 0px 10px 0px;
+        letter-spacing: 7px;
+    }
+
+    .main_title h2{
+        font-size: 28px;
+    }
+
+}
+
+@media (min-width: 576px) and (max-width: 767.98px){
+    .wrapper{
+        width: auto;
+    }
+
+    .right-nav{
+        display: none;
+    }
+
+    header{
+        height: 450px;
+    }
+
+    .main_title h1{
+        font-size: 32px;
+        margin: 30px 0px 10px 0px;
+        letter-spacing: 7px;
+    }
+
+    .main_title h2{
+        font-size: 28px;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 991.98px){
+    .wrapper{
+        width: auto;
+    }
+
+    .main_title h1{
+        font-size: 58px;
+    }
+
+    .main_title h2{
+        font-size: 36px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px){
+    .wrapper{
+        width: auto;
+    }
+}
+
+/* container 最外層 */
+.container{
+    background-image: url(../img/backgroundbn.png) ;
+    background-repeat: left top repeat ;
+    overflow: hidden;
+}
+
+.container img{
+    width: 100%;
+}
+
+.section_wrapper{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 575.98px) {
+    .section_wrapper{
+        width: auto;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 1199.98px){
+    .section_wrapper{
+        width: auto;
+    }
+}
+
+
+/* breadcrumbs 麵包屑 */
+.breadcrumb{
+    display: flex;
+    padding-top: 32px;
+    margin-top: 60px;
+}
+.breadcrumb a{
+    color: #213375;
+    line-height: 30px;
+}
+
+.breadcrumb_list{
+    background-color: #FFDC59;
+    width: 50px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+.breadcrumb li{
+    margin: 0px 15px;
+}
+
+.breadcrumb a:hover{
+    color: #FFDC59 ;
+}
+/* 
+.breadcrumb_list + li::before{
+    content: '>';
+    display: inline-block;
+    padding: 10px;
+    color: #213375;
+  } */
+
+.breadcrumb .fa-solid{
+    margin-top: 8px;
+    color: #213375;
+} 
+
+.breadcrumb_list:hover{
+    background-color: #213375;
+}
+
+.current{
+    background-color: #C0E3EE;
+    width: 42px;
+    height: 25px;
+    border-radius: 10px;
+    color: #213375;
+    padding-top: 8px;
+    padding-left: 7px ;
+}
+/* breadcrumbs 麵包屑 end */
+
+/* ----------section start --------*/
+/* ig part */
+h4{
+    color: #828282;
+    text-align: center;
+    font-size: 30px;
+    margin: 30px 0px;
+    letter-spacing: 5px;
+}
+
+.ig_icon{
+    margin: 0 450px;
+    display: flex;
+}
+
+.ig_icon img{
+    width: 100px;
+}
+
+.ig_icon img:hover{
+    transform: scale(1.2);
+}
+
+.ig_account_text{
+    margin-top: 25px;
+    color: #828282;
+    font-size: 18px;
+    padding-left: 20px;
+
+}
+
+.ig_photo{
+    display: flex;
+    justify-content: space-between;
+}
+
+.ig_photo li{
+    display: flex;
+}
+
+.ig_ifm{
+    padding-bottom: 100px;
+}
+
+.photo_area{
+    display: flex;
+    justify-content: center;
+}
+
+.photo_area img{
+    display: block;
+}
+
+.photo_left{
+    padding-right: 20px;
+    width: 500px;
+}
+
+.photo_item{
+    width: 240px;
+    padding: 0px 20px 20px 0px;
+}
+
+.photo_more_wp{
+    padding: 43px 0px;
+}
+
+.photo_buttom{
+    width: 140px;
+    height: 50px;
+    background-color: #CEB8A3;
+    border: #213375 2px solid;
+    border-radius: 9px;
+    margin: 0 auto;
+}
+
+.photo_buttom a{
+    color: #213375;
+    font-size: 24px;
+    line-height: 50px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.photo_buttom:hover{
+    background-color: #213375;
+    border: #CEB8A3 2px solid;
+}
+
+.photo_buttom a:hover{
+    color: #CEB8A3;
+}
+
+.ig_circle_bg{
+    background-color: #213375;
+    width: 290px;
+    height: 290px;
+    border-radius: 50%;
+    margin: 0 450px;
+    box-shadow: -90px 0px 0px #CEB8A3;
+}
+
+
+.ig_infro_text{
+    padding: 60px 40px;
+}
+
+.ig_infro_text p{
+    color: #CEB8A3;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+.ig_infro_text a{
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+}
+.ig_infro_text a:hover{
+    color: #FFDC59;
+}
+/* ig part end*/
+
+/* section bottom */
+.bottom_wrapper{
+    background-image: url(../img/photo_bottombn.jpg);
+    background-repeat: no-repeat;
+    background-position:center center;
+    background-size:cover;
+    height: 330px;
+}
+
+.photo_title{
+    display: flex;
+    justify-content: center;
+    margin: 110px 0px;
+}
+
+.photo_pic{
+    width:50px;
+}
+
+.photo_title_h3{
+    color: #213375;
+    font-size: 20px;
+    padding-left: 20px;
+    letter-spacing: 2px;
+    line-height: 1.3;
+}
+
+/* section photo flex grow */
+.photo_flex_grow{
+    width: 1200px;
+    height: 500px;
+    /* outline: 2px solid #213375; */
+    border-radius: 8px;
+    margin: 0 auto;
+    display: flex;
+    margin-bottom: 80px;
+}
+
+.photo_flex_grow li{
+    background-size: cover;
+    background-position: center center;
+    transition: .9s;
+    border: 8px #C0E3EE solid;
+}
+
+.photo01{
+    background-image: url(../img/photo_bottombn02.jpg);
+    flex-grow: 2;
+}
+
+.photo02{
+    background-image: url(../img/photo_bottombn03.jpg);
+    flex-grow: 2;
+}
+
+.photo03{
+    background-image: url(../img/photo_bottombn04.jpg);
+    flex-grow: 2;
+}
+
+.photo_flex_grow li:hover{
+    flex-grow: 9;
+}
+/* section bottom end */
+/* ----------section end --------*/
+
+@media screen and (max-width: 575.98px) {
+    h4{
+        font-size: 20px;
+    }
+    
+    .photo_flex_grow{
+        width: auto;
+        display: none;
+    }
+    
+    .ig_icon{
+        margin: 0 auto;
+    }
+
+    .photo_area{
+        flex-direction: column;
+    }
+
+    .photo_left{
+        width: 90%;
+        margin: 0 auto;
+        padding-right: 0px;
+        
+    }
+
+    .photo_item{
+        width: 44%;
+        padding: 20px 0px;
+        margin: 0 auto;
+    }
+
+    .photo_item img:last-child{
+
+    }
+
+    .photo_middle{
+        display: flex;
+        padding: 0px 8px;
+    }
+    
+    .photo_right{
+        display: flex;
+        padding: 0px 8px;
+    }
+
+    .ig_circle_bg{
+        margin: 0 auto;
+    }
+
+    /* .dots{
+        display: none;
+    } */
+}
+
+@media (min-width: 576px) and (max-width: 767.98px){
+    h4{
+        font-size: 20px;
+    }
+    
+    .photo_flex_grow{
+        width: auto;
+        display: none;
+    }
+    
+    .ig_icon{
+        margin: 0 auto;
+        justify-content: center;
+    }
+
+    .photo_area{
+        flex-direction: column;
+    }
+
+    .photo_left{
+        width: 90%;
+        margin: 0 auto;
+        padding-right: 0px;
+        
+    }
+
+    .photo_item{
+        width: 44%;
+        padding: 20px 0px;
+        margin: 0 auto;
+    }
+
+
+    .photo_middle{
+        display: flex;
+        padding: 0px 8px;
+    }
+    
+    .photo_right{
+        display: flex;
+        padding: 0px 8px;
+    }
+
+    .ig_circle_bg{
+        margin: 0 auto;
+    }
+
+    /* .dots{
+        display: none;
+    } */
+}
+
+@media (min-width: 768px) and (max-width: 991.98px){
+    
+    .photo_flex_grow{
+        width: auto;
+    }
+    
+    .ig_icon{
+        margin: 0 auto;
+        justify-content: center;
+    }
+
+    .photo_left{
+       display: none;
+    }
+
+    .ig_circle_bg{
+        margin: 0 auto;
+    }
+
+}
+
+@media (min-width: 576px) and (max-width: 1199.98px){
+    .section_wrapper{
+        width: auto;
+    }
+
+    .photo_item{
+        padding: 0px 10px 10px 0px;
+        width: 235px;
+    }
+
+    .photo_left{
+        padding-right: 10px;
+        padding-left: 10px;
+        width: 480px;
+    }
+
+    .ig_circle_bg{
+        margin: 0 auto;
+    }
+
+    .photo_flex_grow{
+        width: 90%;
+    }
+}
+
+

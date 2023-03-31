@@ -1,0 +1,441 @@
+@import url("reset.css");
+
+
+body{
+    color: black;
+    font-family: 'Times New Roman','Arail','Noto Sans TC', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    display: block;
+}
+
+P{
+    line-height: 1.4;
+}
+
+header{
+    background-color: #213375;
+    background-position:center center;
+    background-size:cover;
+    height: 550px;
+}
+
+/* header 最外層 */
+
+.wrapper{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 575.98px) {
+    .wrapper{
+        width: auto;
+    }
+
+    .right-nav{
+        display: none;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px){
+    .wrapper{
+        width: auto;
+    }
+
+    .right-nav{
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px){
+    .wrapper{
+        width: auto;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px){
+    .wrapper{
+        width: auto;
+    }
+
+}
+
+/* header main nav */
+
+.main-nav li:nth-child(8) a{
+    color: #FFDC59;
+}
+
+.nav-logo-ph{
+    display: none;
+}
+
+/* heade title */
+
+
+header p{
+    color: #FFDC59;
+    font-size: 90px;
+    margin-left: 110px;
+}
+
+header h1{
+    color: white;
+    font-size: 48px;
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+.faq_pic01{
+    width: 400px;
+    margin: 0 auto;
+}
+
+.faq_pic01 img{
+    padding-top: 50px;
+    float: right;
+}
+/* header 最外層  end*/
+
+/* -----Header RWD----- */
+@media screen and (max-width: 575.98px) {
+
+    header{
+        height: 450px;
+    }
+
+    header p{
+        margin-left: 50px;
+        font-size: 70px;
+    }
+
+    header h1{
+        font-size: 36px;
+        letter-spacing: 3px;
+    }
+
+    .faq_pic01 img{
+        width: 50px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px){
+
+    header{
+        height: 450px;
+    }
+
+    header p{
+        margin-left: 50px;
+        font-size: 70px;
+    }
+
+    header h1{
+        font-size: 40px;
+        letter-spacing: 3px;
+        padding: 0px 30px;
+    }
+
+    .faq_pic01 img{
+        width: 50px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px){
+
+    header p{
+        margin-left: 70px;
+        font-size: 70px;
+    }
+
+    header h1{
+        font-size: 40px;
+        letter-spacing: 3px;
+        padding: 0px 30px;
+    }
+
+    .faq_pic01 img{
+        width: 50px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px){
+
+    header p{
+        font-size: 70px;
+    }
+
+    header h1{
+        letter-spacing: 3px;
+        padding: 0px 30px;
+    }
+
+}
+
+/* container 最外層 */
+.container{
+    background-image: url(../img/backgroundbn.png) ;
+    background-repeat: left top repeat ;
+}
+
+/* section wrapper 最外層 */
+.section_wrapper{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 575.98px) {
+    .section_wrapper{
+        width: auto;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px){
+    .section_wrapper{
+        width: auto;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px){
+    .section_wrapper{
+        width: auto;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px){
+    .section_wrapper{
+        width: auto;
+    }
+}
+
+
+/* breadcrumbs 麵包屑 */
+.breadcrumb{
+    display: flex;
+    padding-top: 32px;
+}
+.breadcrumb a{
+    color: #213375;
+    line-height: 30px;
+}
+
+.breadcrumb_list{
+    background-color: #FFDC59;
+    width: 50px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+.breadcrumb a:hover{
+    color: #FFDC59 ;
+}
+
+.breadcrumb li{
+    margin: 0px 15px;
+}
+
+/* .breadcrumb_list + li::before{
+    content: '>';
+    display: inline-block;
+    padding: 10px;
+    color: #213375;
+  } */
+
+.breadcrumb .fa-solid{
+    margin-top: 8px;
+    color: #213375;
+} 
+
+.breadcrumb_list:hover{
+    background-color: #213375;
+}
+
+.current{
+    background-color: #C0E3EE;
+    width: 40px;
+    height: 25px;
+    border-radius: 10px;
+    color: #213375;
+    padding-top: 8px;
+    padding-left: 10px ;
+}
+/* breadcrumbs 麵包屑 end*/
+
+.section_wrapper h2{
+    font-size: 36px;
+    text-align: center;
+    letter-spacing: 4px;
+    padding: 50px 0;
+}
+
+/* faq */
+.faq_section *, .faq_section *:after, .faq_section *:before {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+.faq_section {
+    padding-bottom: 70px ;
+}
+.faq_section .cp_actab {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	margin-bottom: 20px;
+    font-size: 18px;
+	color: rgb(80, 80, 80);
+    letter-spacing: 5px;
+    background-color: #C0E3EE;
+}
+
+
+.faq_section .cp_actab input {
+	position: absolute;
+	opacity: 0;
+}
+/* question */
+.faq_section .cp_actab label {
+	line-height: 2.2 ;
+	position: relative;
+	display: block;
+	margin: 0 0 0 0;
+	padding: 1em 2em 1em 1em;
+	cursor: pointer;
+}
+.faq_section .cp_actab label:hover {
+    background-color: #FFDC59;
+	color: #213375;
+}
+
+
+/* answer */
+.faq_section .cp_actab .cp_actab-content {
+	overflow: hidden;
+	max-height: 0;
+	-webkit-transition: max-height 0.5s ease-out;
+	        transition: max-height 0.1s ease-out;
+	color: black;
+    font-size: 17px;
+	background: white;
+}
+.faq_section .cp_actab .cp_actab-content p {
+	margin: 1em;
+}
+/* answer after hover */
+.faq_section .cp_actab input:checked ~ label {
+    background-color: #213375;
+	color: #FFDC59;
+}
+.faq_section .cp_actab input:checked ~ .cp_actab-content {
+	max-height: 300em;
+    border: #213375 1px solid;
+}
+/* icon after hover */
+.faq_section .cp_actab label::after {
+	line-height: 1.6;
+	position: absolute;
+	top: 50%;
+	right: 0;
+	display: block;
+	width: 3em;
+	margin-top: -12.5px;
+	-webkit-transition: all 0.5s ease;
+	        transition: all 0.5s ease;
+	text-align: center;
+}
+.faq_section .cp_actab input[type=checkbox] + label::after {
+	content: '+';
+}
+.faq_section .cp_actab input[type=checkbox]:checked + label::after {
+    content: '-';
+	-webkit-transform: rotateX(180deg);
+	transform: rotateX(180deg);
+    transform: scale(1.5);
+}
+/* ---------------- faq end -----------*/
+
+
+/* ------ e-mail ---------- */
+.email_wp{
+    padding-bottom: 100px;
+}
+
+.email_area{
+    border: 1px solid black;
+    width: 900px;
+    height: 300px;
+    background-color: #fff;
+    border-radius: 30px;
+    margin: 0 auto;
+    box-shadow: 6px 8px 7px gainsboro;
+    text-align: center;
+} 
+
+.email_area h3{
+    font-size: 24px;
+    padding-top: 70px ;
+}
+
+.email_area h4{
+    font-size: 24px;
+    padding-top: 15px ;
+}
+
+.email_area img{
+   padding: 20px 0;
+}
+/* ------ e-mail end --------- */
+
+/* ------section RWD---- */
+@media screen and (max-width: 575.98px) {
+    .section_wrapper h2{
+        font-size: 24px;
+    }
+
+    .email_area{
+        width: auto;
+    }
+
+    .email_area h3{
+        font-size: 18px;
+    }
+
+    .email_area h4{
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px){
+    .section_wrapper h2{
+        font-size: 24px;
+    }
+
+    .email_area{
+        width: auto;
+    }
+
+    .email_area h3{
+        font-size: 18px;
+    }
+
+    .email_area h4{
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px){
+    .section_wrapper h2{
+        font-size: 24px;
+    }
+
+    .email_area{
+        width: auto;
+    }
+
+}
+
+
+

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buen Camino 朝聖之路</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/module.css">
+    <link rel="stylesheet" href="css/routes.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="icon" href="./img/Logo.ico" type="image/icon"/>
+</head>
+<body>
+    <header>
+        
+        <!-- header 最外層 -->
+        <div class="wrapper">
+
+            <!-- header main nav -->
+            <nav class="main-nav">
+                <a href="index.html" class="nav-logo"><img src="./img/logowhite2.png" alt=""></a>
+                <ul class="nav-menu">
+                    <a href="index.html" class="nav-logo-ph"><img src="./img/logowhite2.png" alt=""></a>
+                    <li class="nav-item"><a href="about.html" class="nav-link" >ABOUT</a></li>
+                    <li class="nav-item"><a href="routes.html" class="nav-link">ROUTES</a></li>
+                    <li class="nav-item"><a href="plan.html" class="nav-link">PLAN</a></li>
+                    <li class="nav-item"><a href="photo.html" class="nav-link">PHOTO</a></li>
+                    <li class="nav-item"><a href="story.html" class="nav-link">STORY</a></li>
+                    <li class="nav-item"><a href="event.html" class="nav-link">EVENT</a></li>
+                    <li class="nav-item"><a href="faq.html" class="nav-link">FAQ</a></li>
+                    <nav class="right-nav-ph">
+                        <a href="https://www.instagram.com/" target="_black"><img src="./img/instagram_yellow.png" alt=""></a>
+                        <a href="https://www.youtube.com/" target="_black"><img src="./img/youtube-yellow.png" alt=""></a>
+                        <a href="https://www.facebook.com/" target="_black"><img src="./img/facebook_yellow.png" alt=""></a>
+                        <a href="https://twitter.com/explore" target="_black"><img src="./img/twitter_yellow.png" alt=""></a>
+                    </nav>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar" id="bar1"></span>
+                    <span class="bar" id="bar2"></span>
+                    <span class="bar" id="bar3"></span>
+                </div>
+            </nav>
+            <!-- header main nav end-->
+
+            <!-- header right nav-->
+            <nav class="right-nav">
+                <ul>
+                    <li><a href="https://www.instagram.com/" target="_black"><img src="./img/instagram.png" alt=""></a></li>
+                    <li><a href="https://www.youtube.com/" target="_black"><img src="./img/youtube.png" alt=""></a></li>
+                    <li><a href="https://www.facebook.com/" target="_black"><img src="./img/facebook_logo.png" alt=""></a></li>
+                    <li><a href="https://twitter.com/explore" target="_black"><img src="./img/twitter.png" alt=""></a></li>
+                </ul>
+            </nav>
+            <!-- header right nav end-->
+            <div class="main_title">
+                <h1>ROUTES</h1>
+            </div>
+            <h2>不同的路線，不同的決定，決定了不同的相遇。</h2>
+        <!-- header 最外層 end -->
+    </header>
+
+
+
+    <!-- container 最外層 -->
+    <div class="container">
+        <!-- section wrapper 最外層 -->
+        <div class="section_wrapper">
+            
+            <!-- breadcrumb麵包屑 -->
+            <ul class="breadcrumb">
+                <li class="breadcrumb_list"><a href="./index.html">Index</a></li>
+                <i class="fa-solid fa-angles-right"></i>
+                <li class="current"> <em aria-current="page">Routes</em></li>
+                </ul>
+            <!-- breadcrumb麵包屑 end -->
+            
+            <section>
+                <div class="third_title_ph">
+                    <h3>Search by Routes</h3>
+                </div>
+                <div class="routes_buttons_ph">
+                    <a class="routes_button" id="map_all" href="#"><i class="fa-solid fa-circle"></i><span class="mapa color_ch">All Camino</span></a>
+                    <a class="routes_button" id="map_norte" href="#"><i class="fa-solid fa-circle c01"></i><span class="mapa">Camino del Norte</span></a>
+                    <a class="routes_button" id="map_frances" href="#"><i class="fa-solid fa-circle c02"></i><span class="mapa">Camino Frances</span></a>
+                    <a class="routes_button" id="map_finisterre" href="#"><i class="fa-solid fa-circle c03"></i><span class="mapa">Camino Finisterre</span></a>
+                    <a class="routes_button" id="map_ingles" href="#"><i class="fa-solid fa-circle c04"></i><span class="mapa">Camino Ingles</span></a>
+                    <a class="routes_button" id="map_viadalaplata" href="#"><i class="fa-solid fa-circle c05"></i><span class="mapa">Via da la Plata</span></a>
+                    <a class="routes_button" id="map_portugues" href="#"><i class="fa-solid fa-circle c06"></i><span class="mapa">Camino Portugues</span></a>
+                    <a class="routes_button" id="map_lepuy" href="#"><i class="fa-solid fa-circle c07"></i><span class="mapa">Camino Le Puy</span></a>    
+                </div>
+                <div class="map_bg">
+            
+                    <div class="map_bn">
+                        <img id="map_all_i" class="maps_bn maps_show" src="./img/map.jpg" alt="">
+                        <img id="map_norte_i" class="maps_bn" src="./img/map_norte.jpg" alt="">
+                        <img id="map_frances_i" class="maps_bn" src="./img/map_frances.jpg" alt="">
+                        <img id="map_finisterre_i" class="maps_bn" src="./img/map_finisterre.jpg" alt="">
+                        <img id="map_ingles_i" class="maps_bn" src="./img/map_ingles.jpg" alt="">
+                        <img id="map_viadalaplata_i" class="maps_bn" src="./img/map_viadalaplata.jpg" alt="">
+                        <img id="map_portugues_i" class="maps_bn" src="./img/map_portugues.jpg" alt="">
+                        <img id="map_lepuy_i" class="maps_bn" src="./img/map_lepuy.jpg" alt="">              
+                    </div>
+                    <div class="map_left_nav">
+                        <div class="third_title">
+                            <h3>Search
+                            <br>by Routes</h3>
+                        </div>
+                        <!-- <div class="routes_color_list">
+                            <div class="routes_color"><img src="./img/caminoall.png" alt=""></div>
+                            <div class="routes_color"><img src="./img/caminodelnorte.png" alt=""></div>
+                            <div class="routes_color"><img src="./img/caminofrances.png" alt=""></div>
+                            <div class="routes_color"><img src="./img/caminofinisterre.png" alt=""></div>
+                            <div class="routes_color"><img src="./img/caminoingles.png" alt=""></div>
+                            <div class="routes_color"><img src="./img/caminoviadalaplata.png" alt=""></div>
+                            <div class="routes_color"><img src="./img/caminoportuges.png" alt=""></div>
+                            <div class="routes_color"><img src="./img/caminolepuy.png" alt=""></div>
+                            
+                        </div> -->
+                        
+                        <div class="routes_buttons">
+                            <a class="routes_button" id="map_all" href="#"><i class="fa-solid fa-circle"></i><span class="mapa color_ch">All Camino</span></a>
+                            <a class="routes_button" id="map_norte" href="#"><i class="fa-solid fa-circle c01"></i><span class="mapa">Camino del Norte</span></a>
+                            <a class="routes_button" id="map_frances" href="#"><i class="fa-solid fa-circle c02"></i><span class="mapa">Camino Frances</span></a>
+                            <a class="routes_button" id="map_finisterre" href="#"><i class="fa-solid fa-circle c03"></i><span class="mapa">Camino Finisterre</span></a>
+                            <a class="routes_button" id="map_ingles" href="#"><i class="fa-solid fa-circle c04"></i><span class="mapa">Camino Ingles</span></a>
+                            <a class="routes_button" id="map_viadalaplata" href="#"><i class="fa-solid fa-circle c05"></i><span class="mapa">Via da la Plata</span></a>
+                            <a class="routes_button" id="map_portugues" href="#"><i class="fa-solid fa-circle c06"></i><span class="mapa">Camino Portugues</span></a>
+                            <a class="routes_button" id="map_lepuy" href="#"><i class="fa-solid fa-circle c07"></i><span class="mapa">Camino Le Puy</span></a>     
+                        </div>
+                    </div>
+                </div>
+                <!-- routes list 朝聖之路介紹 -->
+                <div class="routes_title">
+                    <div class="pic01">
+                        <img src="./img/faq_pic01.png" alt="">
+                    </div>
+                    <div class="routes_title_4">
+                        <h4>BUEN CAMINO</h4>
+                    </div>
+                </div>
+
+                <!-- routes area one 第一區-->
+                <div class="routes_container">
+                    <div class="routes_cards">
+                        <img src="./img/camino_del_norte.jpg" alt="">
+                        <div class="routes_info">
+                            <h5>Camino del Norte</h5>
+                            <p>北方之路是沿著西班牙北部海岸的一條路線，
+                            從Basque出發,穿越Cantabria、Asturias、
+                            Galicia,到Santiago de Compostela。
+                            雖然上坡路較多，但擁有大自然美景的山與海
+                            、美食，就是這條路最吸引人的特色，孤獨與
+                            寧靜的絕美。</p>
+                        </div>
+                    </div>
+                    <div class="routes_cards">
+                        <img src="./img/camino_frances.jpg" alt="">
+                        <div class="routes_info">
+                            <h5>Camino Frances</h5>
+                            <p>法國之路是所有路線最受歡迎最著名的,擁有
+                            驚嘆的城市和自然美景,會穿越Pamplona、
+                            Logroño及Leon、O Cebreiro、Sarria等。
+                            大多數朝聖者是從Sarria開始,主要因為領取
+                            朝聖護照最少走最後一百公里。此路線沿途的
+                            指標、箭頭、餐廳酒吧和住宿點也是最多的。</p>
+                        </div>
+                    </div>
+                </div>
+                 <!-- routes area one 第一區 end-->
+
+                <!-- routes area one 第二區-->
+                <div class="routes_container2">
+                    <div class="routes_cards2">
+                        <img src="./img/camino_finisterre.jpg" alt="">
+                        <div class="routes_info2">
+                            <h5>Camino Finisterre</h5>
+                            <p>世界盡頭之路，聖地牙哥教堂不是旅程的終點,而是新旅程的開始。途中會
+                            遇到兩條不同方向的叉路，一條直通Finisterre，另一條則先通往另一座海邊小鎮 Muxía。</p>
+                        </div>
+                    </div>
+                    <div class="routes_cards2">
+                        <img src="./img/camino_ingles.jpg" alt="">
+                        <div class="routes_info2">
+                            <h5>Camino Ingles</h5>
+                            <p>兩個起點:Ferrol和A Coruna
+                            是北歐、英國和愛爾蘭的朝者的傳統路線,也是一條重要
+                            的貿易路線。A Coruna是一
+                            個比Ferrol更大的小鎮,只有
+                            少數朝聖者從那裡出發,因為
+                            它距離聖地亞哥德孔波斯特
+                            拉不到100 公里。</p>
+                        </div>
+                    </div>
+                    <div class="routes_cards2">
+                        <img src="./img/camino_viadala_ plata.jpg" alt="">
+                        <div class="routes_info2">
+                            <h5>Via da la Plata</h5>
+                            <p>是所有路線最長的,從南到北
+                            遊覽半島，經西班牙一些最
+                            美麗的地方。Seville,Zafra, 
+                            Merida，Caceres，Zamora，Astorga等城市都是在這條美妙道路上發現的一些地方。</p>
+                        </div>
+                    </div>
+                </div>
+                
+            
+                <!-- routes area one 第二區 end-->
+
+                <!-- routes area one 第三區-->
+                <div class="routes_container3">
+                    <div class="routes_cards3">
+                        <img src="./img/camino_portugues.jpg" alt="">
+                        <div class="routes_info3">
+                            <h5>Camino Portugues</h5>
+                            <p>葡萄牙之路是第二受歡迎的路線，擁有大西
+                            洋美景和沙灘，能品嚐美味海鮮和葡萄酒。
+                            雖然葡萄牙之路的起點都在葡萄牙首都
+                            Lisboa,大多朝聖者從第二大城市Porto
+                            或Tui開始他們的旅程,因為從Lisboa
+                            到Porto的路幾乎都是難走的石頭路，線設施較少，路標也不是很好。</p>
+                        </div>
+                    </div>
+                    <div class="routes_cards3">
+                        <img src="./img/camino_frances.jpg" alt="">
+                        <div class="routes_info3">
+                            <h5>Camino Le Puy</h5>
+                            <p>Le Puy Route是法國最受歡迎的朝聖路線。
+                            它從 Le Puy-en-Velay 鎮的里昂附近開始
+                            ，一直到 Saint-Jean-Pied-de-Port。
+                            是一條相當多山的路線，經常起伏不定。
+                            大自然風景優美，一年中走這條路線的最佳
+                            時間是夏天，但那時是最繁忙的時候，有時
+                            可能很難找到住宿。</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- routes area one 第三區 end-->
+                <!-- routes list 朝聖之路介紹 end -->
+            </section>
+                
+
+
+        </div> 
+        <!-- section wrapper 最外層 end -->
+    </div>
+    <!-- container 最外層 end -->
+
+
+
+    <!-- Totopbuttom -->
+    <button type="button" id="BackTop" class="totop-arrow"></button>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./js/totop-arrow.js"></script>
+    <script src="./js/module.js"></script>
+    <script src="./js/click_button_map.js"></script>
+
+     <!-- footer start -->
+     <footer>
+        <h1>朝聖之路</h1>
+        <h2>Camino de Santiago</h2>
+        <img class="footer-logo" src="img/logowhite.png" alt="">
+        <ul class="footer-nav">
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="routes.html">ROUTES</a></li>
+            <li><a href="plan.html">PLAN</a></li>
+            <li><a href="photo.html">PHOTO</a></li>
+            <li><a href="story.html">STORY</a></li>
+            <li><a href="event.html">EVENT</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+        </ul>
+        <ul class="footer-icon">
+            <li><a href="https://www.instagram.com/" target="_black"><img src="./img/instagram_yellow.png" alt=""></a></li>
+            <li><a href="https://www.youtube.com/" target="_black"><img src="./img/youtube-yellow.png" alt=""></a></li>
+            <li><a href="https://www.facebook.com/" target="_black"><img src="./img/facebook_yellow.png" alt=""></a></li>
+            <li><a href="https://twitter.com/explore" target="_black"><img src="./img/twitter_yellow.png" alt=""></a></li>
+        </ul>
+        <p class="footer-p1">©2022 By Buen Camino Heal way All Rights Reserved.</p>
+        <p class="footer-p2">本網站為緯育TibaMe前端工程師專業技術養成班第76期學員專題作品,本平台僅供學習、展示之用。若有侵權疑慮,您可以私訊 [緯育TibaMe] ,後續會由專人協助處理。</p>
+        <p class="footer-p3">本網站為緯育TibaMe前端工程師專業技術養成班第76期學員專題作品,本平台僅供學習、展示之用。</p>
+    </footer>
+    <!-- footer end -->
+    
+</body>
+</html>
